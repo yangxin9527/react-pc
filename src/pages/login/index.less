@@ -1,0 +1,203 @@
+@import "/src/mixin";
+.register{
+  min-height: 100vh;
+  background: #fff;
+  &-logo-bar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    .container();
+    img{
+      width: 115px;
+      height: 45px;
+      margin-right: 35px;
+    }
+    span{
+      font-size: 24px;
+      color:#333;
+    }
+  }
+  &-blank{
+    height: 120px;
+    background: #F6F6F6;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    padding: 80px 0 0 0;
+  }
+  .register-form{
+    width: 420px;
+    .ant-input{
+      height: 40px;
+      border-color:#F2F2F2;
+    }
+    .ant-input-password{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .ant-form-item-label > label{
+      height: 40px;
+    }
+    .ant-form-item-control-input{
+      width: auto;
+    }
+    .ant-input-affix-wrapper{
+      border-color:#F2F2F2;
+      height: 40px;
+      .ant-input{
+        height: auto;
+      }
+    }
+    .get-code{
+      padding: 10px;
+      height: 40px;
+      position: absolute;
+      line-height: 100%;
+      right: 0;
+      top: 0;
+    }
+    .submit-btn{
+      width: 90px;
+      height: 36px;
+      color:#fff;
+      background: #D0111A;
+      border:none;
+    }
+    .ant-checkbox-wrapper{
+      font-size: 12px;
+      color:#999999;
+    }
+    .tips{
+      margin-top: 20px;
+      font-size: 14px;
+      color:#333;
+    }
+  }
+}
+
+.login-wrap{
+  min-width: 1200px;
+  height: 660px;
+  .login-form-wrap{
+    .container();
+    position: relative;
+  }
+  .login-form{
+    width: 350px;
+    height: 410px;
+    position: absolute;
+    top: 124px;
+    right: 0;
+    padding: 40px 35px;
+    background: #fff;
+    .tab{
+      display: flex;
+      width: 240px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 18px;
+      >div{
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 28px;
+        position: relative;
+        flex-grow: 1;
+        .icon-bar{
+          display:none;
+          position: absolute;
+          bottom:-8px;
+          left: 50%;
+          margin-left: -15px;
+          width: 30px;
+          height: 2px;
+          background: @primary-color;
+        }
+        &.on{
+          color:@primary-color;
+          .icon-bar{
+            display: block;
+          }
+        }
+      }
+
+    }
+    .item-wrap{
+      width: 100%;
+      height: 50px;
+      border:1px solid #F2F2F2;
+      background: #FCFCFC;
+      margin-bottom: 20px;
+      display: flex;
+      >.icon{
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        margin: 16px 18px;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .icon-phone{
+        background-size: 12px;
+      }
+      .icon-code{
+        background-size: 14px;
+      }
+      input{
+        flex-grow: 1;
+        height: 48px;
+        background: none;
+      }
+      .code-input{
+        width: 110px;
+      }
+      .btn-get-code{
+        width: 110px;
+        flex-shrink: 0;
+        height: 48px;
+        background: none;
+        color:@primary-color;
+        &.disabled{
+          opacity: 0.5;
+          color:#656565;
+        }
+      }
+
+    }
+    .login-btn{
+      width: 100%;
+      margin: 10px auto 20px;
+      height: 40px;
+      background: @primary-color;
+      font-size: 14px;
+      color:#fff;
+    }
+    .login-tips{
+      padding: 0 4px;
+      vertical-align: center;
+      font-size: 12px;
+      color:#999999;
+      span{
+        padding: 0;
+      }
+      .login-tips-span{
+        padding-left: 4px;
+      }
+    }
+    .login-footer{
+      margin-top: 40px;
+      text-align: center;
+      >a{
+        padding: 5px ;
+        margin-right: 40px;
+        font-size: 14px;
+        color:#333333;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+}

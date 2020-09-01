@@ -1,13 +1,21 @@
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {Provider} from "mobx-react"
+import Router from './Router';
+import zhCN from 'antd/es/locale/zh_CN';
+import {ConfigProvider} from "antd";
 import * as serviceWorker from './serviceWorker';
-
+import store from "./store";
+import './index.less';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Provider {...store}>
+        <ConfigProvider locale={zhCN}>
+            <Router />
+        </ConfigProvider>
+    </Provider>,
+
   document.getElementById('root')
 );
 

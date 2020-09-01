@@ -1,0 +1,28 @@
+@import "/src/mixin";
+
+.user-layout{
+  .container();
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  .user-aside{
+    flex-shrink: 0;
+    width: 230px;
+    margin-right: 20px;
+    min-height: 300px;
+    padding: 30px;
+    background: #fff;
+    a{
+      display: block;
+      font-size: 14px;
+      color:#666666;
+      &.on{
+        color:@primary-color;
+      }
+    }
+  }
+  .user-container{
+    margin-left: auto;
+    flex: 1;
+  }
+}
