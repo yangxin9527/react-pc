@@ -1,24 +1,26 @@
-# 计划
+# react1.6 架子
 
-- loading
+ - 支持mobx
+ - ant design/兼容ie11
+ - less/mobx/ant design/
+ - axios
+ - BrowserHistory路由/默认跳转路由到顶部
+ - 跨域代理请求 
+ - 打包完ftp上传
+ 
+ 
+ 
+#### 备注
+
+.htacccess 因为是BrowserHistory,apache需要定义配置路由全部访问index.html
+
+## 还需补充内容
+
+1. 弹框
 
 
-# 遇到业务问题
 
-# 遇到技术问题
-   
-- 路由问题 滚动到最上面
-- componentWIllReceiveProps
-- history router state没有保存 react 相同路由
-- 滚动动画
-- modal组件
 
-- [√] git
-- [√] less 
-- [√] antd  
-- [√] mobx 
-- [√] router react-dom react-router-dom react-router
-- [√] github.io 无法访问/github desktop登录不了（查看日志，gitdns解析不到ip,查到ip放host就好了）
 
 
  
